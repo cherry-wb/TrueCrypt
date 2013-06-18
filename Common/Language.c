@@ -33,11 +33,11 @@ wchar_t UnknownString[1024];
 static char *LanguageFileBuffer;
 static HANDLE LanguageFileFindHandle = INVALID_HANDLE_VALUE;
 static char PreferredLangId[6];
-static char *LanguageResource;
-static char *HeaderResource[2];
+static const char *LanguageResource;
+static const char *HeaderResource[2];
 static char ActiveLangPackVersion[6];
 
-static char *MapFirstLanguageFile ()
+static const char *MapFirstLanguageFile ()
 {
 	if (LanguageFileFindHandle != INVALID_HANDLE_VALUE)
 	{
@@ -48,8 +48,8 @@ static char *MapFirstLanguageFile ()
 	if (LanguageResource == NULL)
 	{
 		DWORD size;
-		LanguageResource = (char *) MapResource ("Xml", IDR_LANGUAGE, &size);
-		LanguageResource[size - 1] = 0;
+		LanguageResource = (const char *) MapResource ("Xml", IDR_LANGUAGE, &size);
+		// LanguageResource[size - 1] = 0;
 	}
 
 	return LanguageResource;
@@ -289,11 +289,11 @@ BOOL LoadLanguageFile ()
 	{
 		if (HeaderResource[i] == NULL)
 		{
-			HeaderResource[i] = (char *) MapResource ("Header", headers[i], &size);
-			*(HeaderResource[i] + size - 1) = 0;
+			HeaderResource[i] = (const char *) MapResource ("Header", headers[i], &size);
+			//*(HeaderResource[i] + size - 1) = 0;
 		}
 
-		header = HeaderResource[i];
+		header = (char *) HeaderResource[i];
 		if (header == NULL) return FALSE;
 
 		do
@@ -333,7 +333,7 @@ BOOL CALLBACK LanguageDlgProc (HWND hwndDlg, UINT msg, WPARAM wParam, LPARAM lPa
 			LocalizeDialog (hwndDlg, "IDD_LANGUAGE");
 			ToHyperlink (hwndDlg, IDC_GET_LANG_PACKS);
 
-			for (xml = MapFirstLanguageFile (); xml != NULL; xml = MapNextLanguageFile ())
+			for (xml = (char *) MapFirstLanguageFile (); xml != NULL; xml = MapNextLanguageFile ())
 			{
 				while (xml = XmlFindElement (xml, "language"))
 				{

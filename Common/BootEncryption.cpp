@@ -1022,7 +1022,7 @@ namespace TrueCrypt
 
 		// Boot sector
 		DWORD size;
-		byte *bootSecResourceImg = MapResource ("BIN", bootSectorId, &size);
+		const byte *bootSecResourceImg = MapResource ("BIN", bootSectorId, &size);
 		if (!bootSecResourceImg || size != TC_SECTOR_SIZE_BIOS)
 			throw ParameterIncorrect (SRC_POS);
 
@@ -1049,14 +1049,14 @@ namespace TrueCrypt
 		}
 
 		// Decompressor
-		byte *decompressor = MapResource ("BIN", IDR_BOOT_LOADER_DECOMPRESSOR, &size);
+		const byte *decompressor = MapResource ("BIN", IDR_BOOT_LOADER_DECOMPRESSOR, &size);
 		if (!decompressor || size > TC_BOOT_LOADER_DECOMPRESSOR_SECTOR_COUNT * TC_SECTOR_SIZE_BIOS)
 			throw ParameterIncorrect (SRC_POS);
 
 		memcpy (buffer + TC_SECTOR_SIZE_BIOS, decompressor, size);
 
 		// Compressed boot loader
-		byte *bootLoader = MapResource ("BIN", bootLoaderId, &size);
+		const byte *bootLoader = MapResource ("BIN", bootLoaderId, &size);
 		if (!bootLoader || size > TC_MAX_BOOT_LOADER_SECTOR_COUNT * TC_SECTOR_SIZE_BIOS)
 			throw ParameterIncorrect (SRC_POS);
 

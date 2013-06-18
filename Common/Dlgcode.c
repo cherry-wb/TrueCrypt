@@ -2845,12 +2845,12 @@ BOOL CALLBACK TextInfoDialogBoxDlgProc (HWND hwndDlg, UINT msg, WPARAM wParam, L
 
 char * GetLegalNotices ()
 {
-	static char *resource;
+	static const char *resource;
 	static DWORD size;
 	char *buf = NULL;
 
 	if (resource == NULL)
-		resource = (char *) MapResource ("Text", IDR_LICENSE, &size);
+		resource = (const char *) MapResource ("Text", IDR_LICENSE, &size);
 
 	if (resource != NULL)
 	{
@@ -8419,7 +8419,7 @@ BOOL CALLBACK FindTCWindowEnum (HWND hwnd, LPARAM lParam)
 }
 
 
-BYTE *MapResource (char *resourceType, int resourceId, PDWORD size)
+const BYTE *MapResource (char *resourceType, int resourceId, PDWORD size)
 {
 	HGLOBAL hResL; 
     HRSRC hRes;

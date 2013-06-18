@@ -426,7 +426,7 @@ char *RelativePath2Absolute (char *szFileName);
 void HandleDriveNotReadyError ();
 BOOL CALLBACK CloseTCWindowsEnum( HWND hwnd, LPARAM lParam);
 BOOL CALLBACK FindTCWindowEnum (HWND hwnd, LPARAM lParam);
-BYTE *MapResource (char *resourceType, int resourceId, PDWORD size);
+const BYTE *MapResource (char *resourceType, int resourceId, PDWORD size);
 void InconsistencyResolved (char *msg);
 void ReportUnexpectedState (char *techInfo);
 BOOL SelectMultipleFiles (HWND hwndDlg, char *stringId, char *lpszFileName, BOOL keepHistory);
