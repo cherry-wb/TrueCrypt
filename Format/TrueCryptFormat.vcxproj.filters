@@ -1,0 +1,226 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\common">
+      <UniqueIdentifier>{8d315d51-cc51-4498-8ca6-31576c7b05dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="FormatCom.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="InPlace.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="Tcformat.c">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\BaseCom.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\BootEncryption.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Cmdline.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Combo.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Crc.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Crypto.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Dictionary.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Dlgcode.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\EncryptionThreadPool.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Endian.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Fat.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Format.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\GfMul.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Keyfiles.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Language.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Password.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Pkcs5.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Progress.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Random.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Registry.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\SecurityToken.cpp">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Tests.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Volumes.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Wipe.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Xml.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Common\Xts.c">
+      <Filter>源文件\common</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="FormatCom.idl">
+      <Filter>源文件</Filter>
+    </Midl>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\Common\Apidrvr.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BaseCom.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\BootEncryption.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Cmdline.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Combo.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Common.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Crc.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Crypto.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Dictionary.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Dlgcode.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\EncryptionThreadPool.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Endian.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Exception.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Fat.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Format.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\GfMul.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Keyfiles.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Language.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Password.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Pkcs5.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Progress.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Random.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Registry.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Resource.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\SecurityToken.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Tcdefs.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Tests.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Volumes.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Wipe.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Xml.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Common\Xts.h">
+      <Filter>源文件\common</Filter>
+    </ClInclude>
+    <ClInclude Include="FormatCom.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="InPlace.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Tcformat.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="Format.rc">
+      <Filter>资源文件</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
